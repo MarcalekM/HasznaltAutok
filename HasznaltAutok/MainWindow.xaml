@@ -14,7 +14,18 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <ListBox x:Name="CopiedItems" Margin="641,10,10,126" ItemsSource="{Binding Items}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding marka}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <TextBlock x:Name="Adatok" TextWrapping="Wrap" Text="" Margin="246,130,400,217"/>
-        <StackPanel x:Name="Kep" Width="200" Height="200" Margin="41,12,559,222"/>
+        <StackPanel x:Name="Kep" Width="200" Height="200" Margin="41,12,559,222">
+        </StackPanel>
+        <Button Content="Másol" HorizontalAlignment="Left" Margin="246,105,0,0" VerticalAlignment="Top" Width="50" Height="25" Click="Copy"/>
+        <Button Content="Töröl" HorizontalAlignment="Left" Margin="350,105,0,0" VerticalAlignment="Top" Width="50" Height="25" Click="Delete"/>
+
     </Grid>
 </Window>

@@ -19,11 +19,13 @@ namespace HasznaltAutok
     public partial class MainWindow : Window
     {
         ObservableCollection<Auto> autok;
+        ObservableCollection<Auto> masolatok;
         public MainWindow()
         {
             InitializeComponent();
             DataContext = this;
             autok = new();
+            masolatok = new();
             using StreamReader sr = new(
                 path: @"..\..\..\src\Autok.txt",
                 encoding: System.Text.Encoding.UTF8);
@@ -32,6 +34,7 @@ namespace HasznaltAutok
             ListedCars.ItemsSource = autok;
             ListedCars.SelectionChanged += ListedCars_SelectionChanged;
             ListedCars.SelectedItem = autok[0];
+            CopiedItems.ItemsSource = masolatok;
         }
 
         private void ListedCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -45,6 +48,22 @@ namespace HasznaltAutok
             Kep.Children.Clear();
             Kep.Children.Add(finalImage);
 
+        }
+
+        private void Copy(object sender, RoutedEventArgs e)
+        {
+            if (ListedCars.SelectedItem != null)
+            {
+                masolatok.Add((Auto)ListedCars.SelectedItem);
+            }
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+            if (ListedCars.SelectedItem != null)
+            {
+                masolatok.Remove((Auto)ListedCars.SelectedItem);
+            }
         }
     }
 }
