@@ -10,7 +10,7 @@
         <ListBox x:Name="ListedCars" Margin="10,217,400,10" ItemsSource="{Binding Items}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}"/>
+                    <TextBlock Text="{Binding marka}"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
