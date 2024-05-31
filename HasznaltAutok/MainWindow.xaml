@@ -14,6 +14,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock x:Name="Adatok" TextWrapping="Wrap" Text="" Margin="246,145,400,217"/>
+        <TextBlock x:Name="Adatok" TextWrapping="Wrap" Text="" Margin="246,130,400,217"/>
+        <StackPanel x:Name="Kep" Width="200" Height="200" Margin="41,12,559,222"/>
     </Grid>
 </Window>

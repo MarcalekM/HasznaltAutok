@@ -13,6 +13,7 @@ namespace HasznaltAutok
         public string meghajtas { get; set; }
         public string uzemanyag { get; set; }
         public int ar { get; set; }
+        public string kep { get; set; }
 
         public Auto(string sor)
         {
@@ -22,6 +23,7 @@ namespace HasznaltAutok
             meghajtas = adatok[2];
             uzemanyag= adatok[3];
             ar = int.Parse(adatok[4]);
+            kep = $@"..\..\..\Images\{adatok[5]}";
         }
     }
 

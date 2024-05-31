@@ -1,15 +1,15 @@
-Toyota,Corolla,AWD,Benzin,20000
-Ford,Mustang,RWD,Benzin,35000
-Honda,Civic,FWD,Benzin,22000
-Tesla,Model S,AWD,Elektromos,80000
-BMW,3-as sorozat,RWD,Dízel,41000
-Audi,A4,AWD,Dízel,43000
-Chevrolet,Impala,FWD,Benzin,31000
-Hyundai,Elantra,FWD,Benzin,19000
-Volkswagen,Golf,FWD,Dízel,25000
-Mercedes-Benz,C-osztály,RWD,Dízel,45000
-Nissan,Leaf,FWD,Elektromos,32000
-Mazda,3,FWD,Benzin,21000
-Kia,Optima,FWD,Benzin,23000
-Subaru,Impreza,AWD,Benzin,27000
-Lexus,ES,FWD,Hibrid,38000
+Toyota,Corolla,AWD,Benzin,20000,BMW.png
+Ford,Mustang,RWD,Benzin,35000,Ford.png
+Honda,Civic,FWD,Benzin,22000,Tesla.png
+Tesla,Model S,AWD,Elektromos,80000,Tesla.png
+BMW,3-as sorozat,RWD,Dízel,41000,BMW.png
+Audi,A4,AWD,Dízel,43000,Ford.png
+Chevrolet,Impala,FWD,Benzin,31000,Lexus.png
+Hyundai,Elantra,FWD,Benzin,19000,Ford.png
+Volkswagen,Golf,FWD,Dízel,25000,Lexus.png
+Mercedes-Benz,C-osztály,RWD,Dízel,45000,BMW.png
+Nissan,Leaf,FWD,Elektromos,32000,Ford.png
+Mazda,3,FWD,Benzin,21000,Lexus.png
+Kia,Optima,FWD,Benzin,23000,Ford.png
+Subaru,Impreza,AWD,Benzin,27000,BMW.png
+Lexus,ES,FWD,Hibrid,38000,Lexus.png

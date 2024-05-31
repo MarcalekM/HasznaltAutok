@@ -30,12 +30,20 @@ namespace HasznaltAutok
             while (!sr.EndOfStream) autok.Add(new Auto(sr.ReadLine()));
 
             ListedCars.ItemsSource = autok;
-            ListedCars.SelectedItem = autok[0];
             ListedCars.SelectionChanged += ListedCars_SelectionChanged;
+            ListedCars.SelectedItem = autok[0];
         }
 
         private void ListedCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Auto item = (Auto)ListedCars.SelectedItem;
+            Adatok.Text = $"Típus: {item.tipus}\nMeghajtás: {item.meghajtas}\nÜzemanyag: {item.uzemanyag}\nÁr: {item.ar}";
+
+            Image finalImage = new();
+            string currentDirectory = Directory.GetCurrentDirectory();
+            finalImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(currentDirectory, $@"..\Images\{item.kep}")));
+            Kep.Children.Clear();
+            Kep.Children.Add(finalImage);
 
         }
     }
