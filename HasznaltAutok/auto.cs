@@ -8,11 +8,11 @@ namespace HasznaltAutok
 {
     internal class Auto
     {
-        private string marka;
-        private string tipus;
-        private string meghajtas;
-        private string uzemanyag;
-        private int ar;
+        public string marka;
+        public string tipus;
+        public string meghajtas;
+        public string uzemanyag;
+        public int ar;
 
         public Auto(string sor)
         {
@@ -22,6 +22,11 @@ namespace HasznaltAutok
             meghajtas = adatok[2];
             uzemanyag= adatok[3];
             ar = int.Parse(adatok[4]);
+        }
+
+        public override string ToString()
+        {
+            return marka;
         }
     }
 

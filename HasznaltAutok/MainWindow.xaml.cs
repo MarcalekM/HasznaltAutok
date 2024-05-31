@@ -28,10 +28,13 @@ namespace HasznaltAutok
                 path: @"..\..\..\src\Autok.txt",
                 encoding: System.Text.Encoding.UTF8);
             while (!sr.EndOfStream) autok.Add(new Auto(sr.ReadLine()));
+
             ListedCars.ItemsSource = autok;
+            ListedCars.SelectedItem = autok[0];
+            ListedCars.SelectionChanged += ListedCars_SelectionChanged;
         }
 
-        public void ListedCars_SelectionChange()
+        private void ListedCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

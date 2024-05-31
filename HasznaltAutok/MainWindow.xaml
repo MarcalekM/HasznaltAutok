@@ -7,14 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="ListedCars" ItemsSource="{Binding Items}" Margin="10,217,400,10" SelectionChanged="ListedCars_SelectionChange">
+        <ListBox x:Name="ListedCars" Margin="10,217,400,10" ItemsSource="{Binding Items}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding marka}"/>
+                    <TextBlock Text="{Binding}"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock TextWrapping="Wrap" Text="" Margin="246,145,400,217"/>
-
+        <TextBlock x:Name="Adatok" TextWrapping="Wrap" Text="" Margin="246,145,400,217"/>
     </Grid>
 </Window>
