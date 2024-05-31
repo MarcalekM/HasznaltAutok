@@ -62,8 +62,13 @@ namespace HasznaltAutok
         {
             if (ListedCars.SelectedItem != null)
             {
-                masolatok.Remove((Auto)ListedCars.SelectedItem);
+                masolatok.Remove((Auto)CopiedItems.SelectedItem);
             }
+        }
+
+        private void Button_DragOver(object sender, DragEventArgs e)
+        {
+
         }
     }
 }
